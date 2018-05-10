@@ -1,3 +1,18 @@
 <view class='titleList'>
-  <view class='titleListItem' wx:for="{{titleListItem}}" bindtap='getNewsList'>{{item}}</view>
+  <view class='titleListItem' wx:for="{{titleListItem}}">
+      <text class="titleListText {{item.show?'select':''}}" data-select="{{item.select}}" bindtap="getNewsList">{{item.name}}</text>
+  </view>
 </view>
+
+<scroll-view scroll-y>
+  <view class = "news-item" wx:for="{{[1,2,3,4,5,6,7,8,9,10]}}">
+    <view class = "news-wraper">
+      <view class = "text">item.text</view>
+      <view class ="news-wraper-y">
+        <view class="source">item.source</view>
+        <view class="time">item.time</view>
+      </view>
+    </view>
+    <image class="news-icon" src="/pages/index/cloudy-icon.png"></image>
+  </view>
+</scroll-view>
