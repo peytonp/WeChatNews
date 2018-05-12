@@ -1,11 +1,12 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/index/details/details"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#87CEFA",//LightSkyBlue
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87CEFA",
     "navigationBarTitleText": "新闻小程序",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
