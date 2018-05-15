@@ -5,7 +5,7 @@
 </view>
 
 <scroll-view scroll-y>
-  <view class = "news-item" wx:for="{{newsList}}" bindtap='onTabNewsDetails'>
+  <view class = "news-item" wx:for="{{newsList}}" data-id="{{item.id}}" bindtap='onTabNewsDetails'>
     <view class = "news-wraper">
       <view class = "text">{{item.text}}</view>
       <view class ="news-wraper-y">

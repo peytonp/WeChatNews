@@ -1,2 +1,13 @@
 <!--pages/index/details/details.wxml-->
-<view>hello world</view>
+<view class='newsDetailTitle'>{{title}}</view>
+<view class='newsDetailSrc'>
+  <view class='detailSource'>{{source}}</view>
+  <view class='detailTime'>{{time}}</view>
+  <view  class='detailCount'>{{readCount}}</view>
+</view>
+<scroll-view>
+  <view class='newsDetailBody' wx:for="{{newsDetailBody}}">
+    <text wx:if='{{item.type!=="image"}}' class="newsDetailText {{item.type==='strong'?'strong':''}}">{{item.text}}</text>
+    <image wx:else class='newsDetailImage' src='{{item.text}}'></image>
+  </view>
+</scroll-view>
